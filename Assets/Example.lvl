@@ -1,5 +1,9 @@
 {
-    "Cores": null,
+    "Cores": [
+        {
+            "Type": "ScriptCore"
+        }
+    ],
     "Scene": [
         {
             "Components": [
@@ -18,6 +22,34 @@
                 },
                 {
                     "Position": [
+                        -8.0,
+                        0.0,
+                        -3.0
+                    ],
+                    "Rotation": [
+                        0.0,
+                        -0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Type": "Transform"
+                },
+                {
+                    "ScriptName": "TransformTest",
+                    "Type": "ScriptComponent"
+                }
+            ],
+            "DestroyOnLoad": true,
+            "Name": "Main Camera"
+        },
+        {
+            "Components": [
+                {
+                    "Position": [
                         0.0,
                         0.0,
                         0.0
@@ -33,10 +65,36 @@
                         1.0
                     ],
                     "Type": "Transform"
+                },
+                {
+                    "Material": {
+                        "DiffuseColor": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Textures": {
+                            "Diffuse": {
+                                "Path": "Assets/default.png",
+                                "RenderMode": "Opaque"
+                            }
+                        },
+                        "Tiling": [
+                            1.0,
+                            1.0
+                        ],
+                        "Type": "DiffuseMaterial"
+                    },
+                    "MeshType": "Model",
+                    "Type": "Mesh"
+                },
+                {
+                    "ModelPath": "Assets/cube.obj",
+                    "Type": "Model"
                 }
             ],
             "DestroyOnLoad": true,
-            "Name": "Main Camera"
+            "Name": "Cube"
         }
     ]
 }
