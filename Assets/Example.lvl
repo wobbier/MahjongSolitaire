@@ -22,7 +22,7 @@
                 },
                 {
                     "Position": [
-                        -8.0,
+                        0.0,
                         0.0,
                         -3.0
                     ],
@@ -75,7 +75,7 @@
                         ],
                         "Textures": {
                             "Diffuse": {
-                                "Path": "Assets/default.png",
+                                "Path": "Engine/Assets/default.png",
                                 "RenderMode": "Opaque"
                             }
                         },
@@ -87,6 +87,10 @@
                     },
                     "MeshType": "Model",
                     "Type": "Mesh"
+                },
+                {
+                    "ScriptName": "EntityMoveScript",
+                    "Type": "ScriptComponent"
                 },
                 {
                     "ModelPath": "Assets/cube.obj",

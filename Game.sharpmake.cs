@@ -28,3 +28,9 @@ public class UserSharpmakeProject : SharpmakeProjectBase
 {
     public UserSharpmakeProject() : base() { }
 }
+
+[Generate]
+public class UserGameScript : GameScript
+{
+    public UserGameScript() : base() { }
+}
