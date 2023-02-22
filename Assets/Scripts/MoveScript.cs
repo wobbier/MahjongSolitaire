@@ -19,31 +19,31 @@ public class EntityMoveScript
         float speedMultiplier = isShiftHeld ? 2.0f : 1.0f;
 
         // r/l
-        if (Input.IsKeyDown(KeyCode.D))
+        if (Input.IsKeyDown(KeyCode.A))
         {
             newTranslation.x += kAcceleration * dt * speedMultiplier;
         }
-        if (Input.IsKeyDown(KeyCode.A))
+        if (Input.IsKeyDown(KeyCode.D))
         {
             newTranslation.x -= kAcceleration * dt * speedMultiplier;
         }
 
         // fw/bw
-        if (Input.IsKeyDown(KeyCode.W))
+        if (Input.IsKeyDown(KeyCode.S))
         {
             newTranslation.z += kAcceleration * dt * speedMultiplier;
         }
-        if (Input.IsKeyDown(KeyCode.S))
+        if (Input.IsKeyDown(KeyCode.W))
         {
             newTranslation.z -= kAcceleration * dt * speedMultiplier;
         }
 
         // u/d
-        if (Input.IsKeyDown(KeyCode.E))
+        if (Input.IsKeyDown(KeyCode.Q))
         {
             newTranslation.y += kAcceleration * dt;
         }
-        if (Input.IsKeyDown(KeyCode.Q))
+        if (Input.IsKeyDown(KeyCode.E))
         {
             newTranslation.y -= kAcceleration * dt;
         }

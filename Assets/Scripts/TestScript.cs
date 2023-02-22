@@ -5,10 +5,22 @@ using System.Runtime.InteropServices;
 public class TransformTest
     : Entity
 {
-    const float kAcceleration = 2.0f;
-
     Transform transformComp;
-    float time = 0.0f;
+    public float time = 0.0f;
+    public float speed = 1.0f;
+    public bool vBool;
+    public char vChar;
+    public short vShort;
+    public int vInt;
+    public long vLong;
+    public double vDouble;
+    public ushort vUShort;
+    public uint vUInt;
+    public ulong vULong;
+    public float vFloat = 0;
+    public Vector2 v2;
+    public Vector3 v3 = new Vector3(0, 16, 0);
+
     void OnCreate()
     {
         if (HasComponent<Transform>())
@@ -17,6 +29,7 @@ public class TransformTest
         }
 
         transformComp = GetComponent<Transform>();
+        //v3 = new Vector3(0, 16, 0);
     }
 
     void OnUpdate(float dt)
@@ -24,7 +37,7 @@ public class TransformTest
         Vector3 newTranslation = new Vector3(transformComp.Translation);
 
         bool isShiftHeld = Input.IsKeyDown(KeyCode.LeftShift);
-        float speedMultiplier = isShiftHeld ? kAcceleration : 1.0f;
+        float speedMultiplier = isShiftHeld ? speed : 1.0f;
         time += dt * speedMultiplier;
         newTranslation.y = (float)Math.Sin(time);
 

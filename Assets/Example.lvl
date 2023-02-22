@@ -13,7 +13,7 @@
                         0.38558414578437805,
                         0.5147058963775635
                     ],
-                    "ClearType": "Color",
+                    "ClearType": "Procedural",
                     "Far": 2000.0,
                     "IsCurrent": true,
                     "Near": 0.10000000149011612,
@@ -75,7 +75,7 @@
                         ],
                         "Textures": {
                             "Diffuse": {
-                                "Path": "Engine/Assets/default.png",
+                                "Path": "Assets/default.png",
                                 "RenderMode": "Opaque"
                             }
                         },
@@ -93,7 +93,7 @@
                     "Type": "ScriptComponent"
                 },
                 {
-                    "ModelPath": "Assets/cube.obj",
+                    "ModelPath": "Engine/Assets/cube.obj",
                     "Type": "Model"
                 }
             ],
