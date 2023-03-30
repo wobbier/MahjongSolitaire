@@ -23,6 +23,13 @@ public class SharpGameSolution : BaseGameSolution
     }
 }
 
+
+//[Generate]
+//public class ScriptGameSolution : BaseScriptingSolution
+//{
+//}
+
+
 [Generate]
 public class UserSharpmakeProject : SharpmakeProjectBase
 {

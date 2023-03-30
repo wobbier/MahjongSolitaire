@@ -9,11 +9,11 @@
             "Components": [
                 {
                     "ClearColor": [
-                        0.0756920576095581,
-                        0.38558414578437805,
-                        0.5147058963775635
+                        9.999899930335232e-07,
+                        9.99997041617462e-07,
+                        9.999999974752427e-07
                     ],
-                    "ClearType": "Procedural",
+                    "ClearType": "Color",
                     "Far": 2000.0,
                     "IsCurrent": true,
                     "Near": 0.10000000149011612,
@@ -75,7 +75,7 @@
                         ],
                         "Textures": {
                             "Diffuse": {
-                                "Path": "Assets/default.png",
+                                "Path": "Engine/Assets/default.png",
                                 "RenderMode": "Opaque"
                             }
                         },
@@ -93,7 +93,7 @@
                     "Type": "ScriptComponent"
                 },
                 {
-                    "ModelPath": "Engine/Assets/cube.obj",
+                    "ModelPath": "Assets/cube.obj",
                     "Type": "Model"
                 }
             ],
