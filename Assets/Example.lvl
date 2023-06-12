@@ -13,10 +13,11 @@
                         9.99997041617462e-07,
                         9.999999974752427e-07
                     ],
-                    "ClearType": "Color",
+                    "ClearType": "Skybox",
                     "Far": 2000.0,
                     "IsCurrent": true,
                     "Near": 0.10000000149011612,
+                    "Skybox": "Assets/Skybox/skybox.jpg",
                     "Type": "Camera",
                     "Zoom": 45.0
                 },
@@ -75,13 +76,13 @@
                         ],
                         "Textures": {
                             "Diffuse": {
-                                "Path": "Engine/Assets/default.png",
+                                "Path": "Assets/default.png",
                                 "RenderMode": "Opaque"
                             }
                         },
                         "Tiling": [
-                            1.0,
-                            1.0
+                            2.0,
+                            2.0
                         ],
                         "Type": "DiffuseMaterial"
                     },
@@ -93,12 +94,62 @@
                     "Type": "ScriptComponent"
                 },
                 {
-                    "ModelPath": "Assets/cube.obj",
+                    "ModelPath": "Engine/Assets/cube.obj",
                     "Type": "Model"
                 }
             ],
             "DestroyOnLoad": true,
             "Name": "Cube"
+        },
+        {
+            "Components": [
+                {
+                    "Position": [
+                        0.0,
+                        0.0,
+                        4.5
+                    ],
+                    "Rotation": [
+                        0.0,
+                        -0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        10.0,
+                        10.0,
+                        1.0
+                    ],
+                    "Type": "Transform"
+                },
+                {
+                    "Material": {
+                        "DiffuseColor": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Textures": {
+                            "Diffuse": {
+                                "Path": "Assets/Textures/Concrete2.png",
+                                "RenderMode": "Opaque"
+                            }
+                        },
+                        "Tiling": [
+                            3.0,
+                            3.0
+                        ],
+                        "Type": "DiffuseMaterial"
+                    },
+                    "MeshType": "Model",
+                    "Type": "Mesh"
+                },
+                {
+                    "ModelPath": "Assets/cube.obj",
+                    "Type": "Model"
+                }
+            ],
+            "DestroyOnLoad": true,
+            "Name": "Wall"
         }
     ]
 }
