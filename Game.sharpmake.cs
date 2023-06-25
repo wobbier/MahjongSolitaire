@@ -19,6 +19,7 @@ public class SharpGameSolution : BaseGameSolution
     public SharpGameSolution()
         : base()
     {
+        Globals.FMOD_Win64_Dir = "C:/Program Files (x86)/FMOD SoundSystem/FMOD Studio API Windows/";
         Name = "Mahjong";
     }
 }
@@ -33,11 +34,15 @@ public class SharpGameSolution : BaseGameSolution
 [Generate]
 public class UserSharpmakeProject : SharpmakeProjectBase
 {
-    public UserSharpmakeProject() : base() { }
+    public UserSharpmakeProject() : base()
+    {
+    }
 }
 
 [Generate]
 public class UserGameScript : GameScript
 {
-    public UserGameScript() : base() { }
+    public UserGameScript() : base()
+    {
+    }
 }
